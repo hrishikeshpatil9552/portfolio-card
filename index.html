@@ -110,7 +110,18 @@
     .contact-form input:focus {
       background: rgba(255, 255, 255, 0.25);
       box-shadow: 0 0 10px #00f2ff;
+    } .portFolio{
+       display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 20px 0;
+      transform: scale(1.2);
+      filter: drop-shadow(0 0 15px #00f2ff);
+      width: 35px;
+      filter: drop-shadow(0 0 6px #00e6e6);
+      transition: transform 0.3s, filter 0.3s;
     }
+    
   </style>
 </head>
 <body>
@@ -132,7 +143,11 @@
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAclBMVEX///8bHyMAAAD4+PgXGyASFxwAAAoJEBbj4+RAQULx8fENEhcYHSEVGh4PFRr19fWYmJlrbG3Y2NnLzMywsLB+f4EtMDOgoaIAAAWRkpNdXV2LjIxFRke/v75UVlgiJSlLTU84Oj11dncpKisbHBxiZGZ0f0PWAAAIx0lEQVR4nO1c6ZKyOhDVsARZBSKiAqKO7/+KN+AKpJsAyUzVV/f8mSpl8NDp9JZuVqslcJ0kZdtdXBXZeb0+Z0UV77YsTRx30W3nIypPcZXZhBCbhoG/5vCDkLYfZFV8Kn+bmFPuPP7boWWuhTCtkJPzdqXzW4zc/TEjNkCnQ80m2XH/CwJzWE1IKMHoySskpGZ65ZXcM+LJEnrBI9k90cXIZRdCpWXUkRclF6ZjGaP9Jg/nMHogzDf7SDElg51JMJ9Sg4CcmaGSU1nkCym1tPKiVEYpuRNrOaUGFlGk8sYhoGooNaDBQcEaphviq+PEXRHZpEvFdKILtpwYIT0tEpZzVCumB3xyXGDj01yhNn2D5rO34SmfZb9lYOanWZSiWMfSveCTeIaBN2qij1IDUk9W96TQpE4f0M1EQ+pk2jlxVtmkTZjelFsnEcLbBDvq3CZHcvPg3aRllWS/IqcGYSapV4Z+Hf+AFlJ7MKp/kRNnVcvYq1izfeqDxOOcTr/MibMa9ThlrtG3iOHnI4bBEfngpjxAzeVkfcpvJHCoZo4aBuMoUHJrx9g2Pns2XcKL//vP/cDK/c/wLvSIbUGRQgW3pxDZlc6NG3yb3LdPi7TLh99japWKZGHvPou7/7Fn5DWmHVyTtywSwYP7FFQrYyPyLqRjc9mGTIz8fGJuv3XG3Qiey9tAC3gQWQPz1i0CROzH7skzsDz6Qmj1vqTeqafGO5FxJgcxpyQQaQyN+88Q7cnjtr5ptfspK47xddcgvteX5qM8fG5Wi1wHzo3ZInkGYid4F7oXW/AIzt0OApoHWRHvS8d1I+NJ3DAi13USdqovZ9v2eI4nSBASYQhC7yJOpdiU20x0MfNvO5Yi1R0jYYeK7ER+LToLtZII+BuFeF8B+8KVcKMGQPomJGUJ4gUmMB8cvqW+CHcRP34+WJPoLK71+D/qC5aVOK4Nzn3p74HgwP9RXxYU7yiuVfvude4GKIrpkJTIwbai2nQFAGiUHlI1lJb0tOoCpgre0mrSEOLdxxFevi8TOcknqLoy5ZsUGGt0/Cykehz2VjUnR+jOHhL4MutOBnt+uoNvPw8lLAHzK5FnSLIQZKptwknkkJ8gH1UHt0N7nWJNdwF/1sKr35dhWZXvKdZ0d4Mlu+S1LpA1f1ylXtE95PTibdWPSD2DXFVzwnPL8Phkjuw966LjAHEHq/pr/wHR3UNQ6u15gwzW9Wesh/CmRy2cMDk8MzoPXD3f03TMasAuxPSaCyLE72nQ8gcQUZFo5Htt59GIVrVKBVt9K9PGCbGNdlNXiEEr1Q9PVcIxwaAq5la/BgVp61s9ruqQv7UqFzGdzbf6cIC0pjGfCahS6iOpb6SwUiXYlxpVCrNE3IvAAZ4mF/MCWBXkgd4WJqW3mQdI3ttgCfZ8RHVvShegp+HeLwa9ENHKaXWFpEHjVQXbTr2kwCUKq1UBxqZ/RSooVhmcrv4RKT9bnSFOf6ZT6/MK5LQmSluwBkBKBRgpvc2QFUIKWT6NQQIHUM9cN8uHKLpmNwP9Lld0xCQIK+j6SXGTUMEx3rzGHUk4ICluPGE3oy+XaQDnK9zNwA75jyLPxiHDoYu/1hm7XOFAYItV8XRuP6R0xjcYHA5LNAzMB1KP5rKAE4d1cNZHCinU8cQBq05ptOlgMNymWEgyKjwVVQPYSj02PZy2r61al1GADUKbtuNlbfVnIC2EbQCv5Wm2F1ZdDAs9pLDThFYQaBV9fjstih+k4eKR2cHlRS4qqT6wqdgjGhP47SVIIVZHbZ8bTqy96FmIxZRq7WsoUiGB8HtvYeazOa1U7ZbRBrv34Rp2DMLlKdHINwXYzvscg+AHRk17ocpci+GNYe86K2oU1moPjRg0fff6rbcPQQ8hmysrVXp1GGkJ+xxCjq0f16upreNiGNexpr6vDArffw0sclrum0uKWcQG5vdW7xe1rXDQxpaL+rOmwLmPNxnS753eDU5Duz4e67A3gBWQbMFsahoTiT7pblT53VYSFKkbRa7Dst6oWpgXh1m0jLKyZFq3w03n374bcD5JKLv1bhUQUu+xrjcBoYRdCekrgxi9BpzvViXz/E6tnGrQLeQRv4j3iZQ9NRx2rW8y6/Z45F6rUscqWF8J333Yw+QHTdfkJT4wxE64bHutmzlpORm1GJyaResv/bGsd8ZnHIFtbFFSYbHWltgTJyWsQfvbav8tEp+8ByLEvbvNPTZ4/AfXNAEMGwVXUTeP9ryXGUuBTnR7xG5FYO8W8JCiEYxerGe9u4HEJZDx7gA8RhlAnDn1yrW0fn4uHlkZz55dOAsWPaSwTXfQ0PzeDImgYyaUyFOxjLIPqKG53/r9aZUoh5MPMl1x6YQBHKj1e7DRaPX6hg0GkcfUvL2fYJwBANwkPxgn+OheeusuhZ/L+BokOe8CGScYJBrhxzw6O26cH4vomx6RGQuaYKrQ8lx/ROV7mzq7+tz06ZP15S75uojRiPYJfESlP8zjdQocUVKWjJWpdMAuaalGhnma0eOOWo1NJOFAc+83/PEqSletlhX45UjJ1Hu7o3SLDmikSEntme7Qobmk9VuGlNzQYc/XWef5aiVBio4EQG90B1m92+zcapxUeJPOcrsjvwGJZ+bHo6QmjPwOhqNtM54lrTFS4TTV6I2RNzOM9YmVZZqm3IAe4lCqt2qEFJ0ipwbDgXsv57mJF1L+J6dyZ0k4qckD92OvJlBAiswpPEdY3UbuxRAIKZ/E8woTyOsu5CQFO2R//lki/GIQOUmBpBa8GAR5hUoutfsAUv7CcqVxoMIEeQmpkJ6Wnq2khUhY9mxSPrkoOC83toIXGM0mRb3FYnogiYcZ1jxSFqnUHfWkda+IaktFpD1SgXDYdj4MlnWkNYOUSTzl78wzWGF7E0l9pVgWuWx1nGe6ZUHos9Qxzff5Hsn0vcHPiS/ty/vMXEpfnTaEtUh21Nu05rCqyZIlFTZtrr3s9Tb3tXATuYJ1i0Q+n/4f/wj+A9lDgy/olQArAAAAAElFTkSuQmCC" alt="GitHub">
       </a>
     </div>
-
+<div class="portfolio">
+  <a href="https://hrishikeshpatil9552.github.io/PortFolio-WebPage/" target="_blank">
+    <button>Visit My Portfolio</button>
+  </a>
+</div>
   <div class="contact-form">
   <p><strong>Email:</strong> hrishikeshpatil9552@gmail.com</p>
   <p><strong>Phone No:</strong> 9552978798</p>
@@ -140,3 +155,4 @@
   </div>
 </body>
 </html>
+
